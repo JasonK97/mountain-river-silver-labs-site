@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { getFirebase } from '../firebase'
+import { Link } from 'react-router-dom'
 
 const labelStyles = {
   display: "block",
@@ -56,6 +57,21 @@ const SignIn = () => {
     return (
       <>
         <h1>Logged in as: {user.email}</h1>
+        <Link
+          to='/create'
+          style={{
+            border: "none",
+            color: "#fff",
+            backgroundColor: "#039be5",
+            borderRadius: "4px",
+            padding: "8px 12px",
+            marginLeft: '24px',
+            fontSize: "0.9rem",
+            textDecoration: 'none'
+          }}
+        >
+          Add New Post
+        </Link>
         <button
             style={{
               border: "none",
@@ -63,6 +79,7 @@ const SignIn = () => {
               backgroundColor: "#039be5",
               borderRadius: "4px",
               padding: "8px 12px",
+              marginLeft: "20px",
               fontSize: "0.9rem"
             }}
             onClick={signOut}

@@ -1,24 +1,59 @@
-nav,
-main {
+nav {
   padding: 24px;
 }
 
 nav {
-  background-color: #039be5;
+  background-color: #1f1f1f;
+  display: flex;
 }
 
 nav a {
   text-decoration: none;
 }
 
-nav a h2 {
+nav h2 {
   color: #ffffff;
   margin: 0;
 }
 
-main {
+.nav-right {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.nav-link {
+  color: #e7d7c1;
+}
+
+.nav-link:hover {
+  color: #8C1C13;
+}
+
+.home-banner {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.home-centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 48px;
+  transform: translate(-50%, -50%);
+  background-color: #8C1C13;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.blog {
   max-width: 700px;
   margin: 0 auto;
+  padding: 24px;
 }
 
 .card {
@@ -38,4 +73,10 @@ main {
 .card-content a {
   display: inline-block;
   margin-top: 12px;
+}
+
+.postImage {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

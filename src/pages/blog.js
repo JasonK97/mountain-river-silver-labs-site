@@ -32,7 +32,7 @@ const Home = () => {
   }
 
   return (
-    <>
+    <div className='blog'>
       <div
         style={{
           display: 'flex', 
@@ -42,21 +42,6 @@ const Home = () => {
         }}
       >
         <h1>Mountain River Silver Labs Blog</h1>
-        <Link
-          to='/create'
-          style={{
-            border: "none",
-            color: "#fff",
-            backgroundColor: "#039be5",
-            borderRadius: "4px",
-            padding: "8px 12px",
-            marginLeft: '24px',
-            fontSize: "0.9rem",
-            textDecoration: 'none'
-          }}
-        >
-          Add New Post
-        </Link>
       </div>
       <p>
         Welcome to where you can read all about our litters and puppies.
@@ -74,11 +59,11 @@ const Home = () => {
                 __html: `${blogPost.content.substring(0, 200)}...`
               }}
             ></p>
-            <Link to={`/blog/${blogPost.slug}`}>Continue reading...</Link>
+            <Link to={`/blog/${blogPost.slug}`}>Continue reading ...</Link>
           </div>
         </section>
       ))}
-    </>
+    </div>
   );
 };
 

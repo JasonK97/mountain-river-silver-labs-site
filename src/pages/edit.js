@@ -86,7 +86,7 @@ const Edit = ({ match, history }) => {
   }
 
   return (
-    <>
+    <div className='blog'>
       <div style={{ 
         display: 'flex', 
         alignItems: 'center',
@@ -186,7 +186,7 @@ const Edit = ({ match, history }) => {
           </button>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
