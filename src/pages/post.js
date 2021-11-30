@@ -73,6 +73,20 @@ const Post = ({ match }) => {
           </div>
         <em>{currentPost.datePretty}</em>
         <p style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: currentPost.content }}></p>
+        <Link
+              to={`/blog`}
+              style={{
+                border: "none",
+                color: "#fff",
+                backgroundColor: "#039be5",
+                borderRadius: "4px",
+                padding: "8px 12px",
+                fontSize: "0.9rem",
+                textDecoration: 'none'
+              }}
+            >
+              Back to list ...
+            </Link>
       </div>
     )
   }
@@ -92,6 +106,20 @@ const Post = ({ match }) => {
       </div>
       <em>{currentPost.datePretty}</em>
       <p style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: currentPost.content }}></p>
+      <Link
+        to={`/blog`}
+        style={{
+          border: "none",
+          color: "#fff",
+          backgroundColor: "#039be5",
+          borderRadius: "4px",
+          padding: "8px 12px",
+          fontSize: "0.9rem",
+          textDecoration: 'none'
+        }}
+      >
+        Back to list ...
+      </Link>
     </div>
   );
 };

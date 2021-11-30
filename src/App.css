@@ -29,14 +29,23 @@ nav h2 {
   color: #8C1C13;
 }
 
+.loading {
+  display: block;
+  justify-content: center;
+  margin-top: 20%;
+}
+
 .home-banner {
   width: 100%;
+  mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  margin-bottom: -5px;
 }
 
 .container {
   position: relative;
   text-align: center;
   color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .home-centered {
@@ -48,6 +57,47 @@ nav h2 {
   background-color: #8C1C13;
   padding: 5px 10px;
   border-radius: 3px;
+}
+
+.parent-card {
+  display: flex;
+  margin: 50px 25%;
+  border: 1px solid #1f1f1f;
+  border-radius: 5px;
+}
+
+.parent-text {
+  display: block;
+  margin: 30px;
+}
+
+.image-right {
+  width: 240px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.image-left {
+  width: 240px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.litters-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.litter-image {
+  margin: 10px;
+  width: 300px;
+  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, .3);
 }
 
 .blog {
