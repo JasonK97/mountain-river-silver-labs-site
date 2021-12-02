@@ -130,3 +130,15 @@ nav h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
+.contact-img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.contact-info {
+  background-color: #8C1C13;
+  color: #e7d7c1;
+  width: 100vw;
+  padding: 24px 0 24px 0;
+}
