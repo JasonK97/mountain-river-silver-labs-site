@@ -9,9 +9,14 @@ const Contact = () => {
       <div className='contact-info'>
         <h2>Contact Us</h2>
         <p>
-          Email: mtn.river.silvers@gmail.com<br />
-          Phone: 208-xxx-xxxx
+          <strong>Email :</strong> mtn.river.silvers@gmail.com<br />
         </p>
+        <a 
+          className='email-link' 
+          href='mailto:mtn.river.silvers@gmail.com?Subject=Puppy Inquiry&body=I would love to adopt one of your puppies! Which are atill available?' 
+        >
+          Send us an Email
+        </a>
       </div>
     </div>
   )

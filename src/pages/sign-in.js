@@ -55,43 +55,28 @@ const SignIn = () => {
 
   if (user) {
     return (
-      <>
+      <div className='blog'>
         <h1>Logged in as: {user.email}</h1>
         <Link
           to='/create'
-          style={{
-            border: "none",
-            color: "#fff",
-            backgroundColor: "#039be5",
-            borderRadius: "4px",
-            padding: "8px 12px",
-            marginLeft: '24px',
-            fontSize: "0.9rem",
-            textDecoration: 'none'
-          }}
+          className='blog-button'
+          style={{marginLeft: '24px'}}
         >
           Add New Post
         </Link>
         <button
-            style={{
-              border: "none",
-              color: "#fff",
-              backgroundColor: "#039be5",
-              borderRadius: "4px",
-              padding: "8px 12px",
-              marginLeft: "20px",
-              fontSize: "0.9rem"
-            }}
+            className='blog-button'
+            style={{marginLeft: '24px'}}
             onClick={signOut}
           >
             Sign Out
           </button>
-      </>
+      </div>
     )
   }
 
   return (
-    <>
+    <div className='blog'>
       <h1>Sign In</h1>
       <section style={{ margin: "2rem 0" }}>
         <label style={labelStyles} htmlFor='email-field'>
@@ -122,21 +107,14 @@ const SignIn = () => {
 
         <div style={{ textAlign: "right" }}>
           <button
-            style={{
-              border: "none",
-              color: "#fff",
-              backgroundColor: "#039be5",
-              borderRadius: "4px",
-              padding: "8px 12px",
-              fontSize: "0.9rem"
-            }}
+            className='blog-button'
             onClick={login}
           >
             Sign In
           </button>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 

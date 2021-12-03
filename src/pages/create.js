@@ -66,7 +66,7 @@ const Create = ({ history }) => {
   };
 
   return (
-    <>
+    <div className='blog'>
       <h1>Create a new post</h1>
       <section style={{ margin: "2rem 0" }}>
         <label style={labelStyles} htmlFor="title-field">
@@ -109,7 +109,7 @@ const Create = ({ history }) => {
         />
 
         <label style={labelStyles} htmlFor="cover-image-alt-field">
-          Cover image alt
+          Cover image alt (Description)
         </label>
         <input
           style={inputStyles}
@@ -135,21 +135,14 @@ const Create = ({ history }) => {
         />
         <div style={{ textAlign: "right" }}>
           <button
-            style={{
-              border: "none",
-              color: "#fff",
-              backgroundColor: "#039be5",
-              borderRadius: "4px",
-              padding: "8px 12px",
-              fontSize: "0.9rem"
-            }}
+            className='blog-button'
             onClick={createPost}
           >
             Create
           </button>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

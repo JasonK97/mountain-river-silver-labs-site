@@ -33,14 +33,7 @@ const Home = () => {
 
   return (
     <div className='blog'>
-      <div
-        style={{
-          display: 'flex', 
-          alignItems: 'center', 
-          marginBottom: '6px',
-          justifyContent: 'space-between'
-        }}
-      >
+      <div className='blog-content'>
         <h1>Mountain River Silver Labs Blog</h1>
       </div>
       <p>

@@ -47,26 +47,11 @@ const Post = ({ match }) => {
     return (
       <div className='blog'>
         <img src={currentPost.coverImage} alt={currentPost.coverImageAlt} className="postImage" />
-          <div 
-            style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              margin: '6px 0',
-              justifyContent: 'space-between'
-            }}>
+          <div className='post-content'>
             <h1>{currentPost.title}</h1>
             <Link
               to={`/edit/${currentPost.slug}`}
-              style={{
-                border: "none",
-                color: "#fff",
-                backgroundColor: "#039be5",
-                borderRadius: "4px",
-                padding: "8px 12px",
-                marginLeft: '24px',
-                fontSize: "0.9rem",
-                textDecoration: 'none'
-              }}
+              className='blog-button'
             >
               Edit Post
             </Link>
@@ -75,15 +60,7 @@ const Post = ({ match }) => {
         <p style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: currentPost.content }}></p>
         <Link
               to={`/blog`}
-              style={{
-                border: "none",
-                color: "#fff",
-                backgroundColor: "#039be5",
-                borderRadius: "4px",
-                padding: "8px 12px",
-                fontSize: "0.9rem",
-                textDecoration: 'none'
-              }}
+              className='blog-button'
             >
               Back to list ...
             </Link>
@@ -108,15 +85,7 @@ const Post = ({ match }) => {
       <p style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: currentPost.content }}></p>
       <Link
         to={`/blog`}
-        style={{
-          border: "none",
-          color: "#fff",
-          backgroundColor: "#039be5",
-          borderRadius: "4px",
-          padding: "8px 12px",
-          fontSize: "0.9rem",
-          textDecoration: 'none'
-        }}
+        className='blog-button'
       >
         Back to list ...
       </Link>

@@ -11,10 +11,20 @@ const Home = () => {
         <img src={PuppiesImg} alt='4 puppies of varying colors' className='home-banner' />
         <div className='home-centered'><strong>Mountain River Silver Labs</strong></div>
       </div>
+      <div className='about'>
+        <h2>About Us</h2>
+        <p>
+          Mountain River Silver Labs are silver factored Laborador Retrievers, we breed our
+          black female, Kimber Mountain of Steel. She is a silver factored Lab, which means that
+          she has the potential to have black, charcoal, brown, and silver puppies each time she 
+          has a litter with a Silver Lab stud. The stud we have been using has moved and so we are 
+          currently in the search for another Silver stud that is not related to Kimber.
+        </p>
+      </div>
       <div className='parent-info'>
         <div className='parent-card'>
           <div className='parent-text'>
-            <h3>Kimber:</h3>
+            <h3>Kimber Mountain of Steel:</h3>
             <p className='content-left'>
               Kimber is a three year old silver factored AKC black lab and is the mother 
               to all of our litters.  Her father was a silver lab and her mother was a 

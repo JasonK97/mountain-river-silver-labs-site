@@ -94,14 +94,7 @@ const Edit = ({ match, history }) => {
       }}>
         <h1>Edit post</h1>
         <button
-          style={{
-            border: "none",
-            color: "#fff",
-            backgroundColor: "#e50303",
-            borderRadius: "4px",
-            padding: "8px 12px",
-            fontSize: "0.9rem"
-          }}
+          className='delete-button'
           onClick={deletePost}
         >
           Delete Post
@@ -172,14 +165,7 @@ const Edit = ({ match, history }) => {
         />
         <div style={{ textAlign: "right" }}>
           <button
-            style={{
-              border: "none",
-              color: "#fff",
-              backgroundColor: "#039be5",
-              borderRadius: "4px",
-              padding: "8px 12px",
-              fontSize: "0.9rem"
-            }}
+            className='blog-button'
             onClick={editPost}
           >
             Save Post
