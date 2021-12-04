@@ -3,19 +3,19 @@ import { getFirebase } from '../firebase'
 import { Link } from 'react-router-dom'
 
 const labelStyles = {
-  display: "block",
+  display: 'block',
   marginBottom: 4
-};
+}
 
 const inputStyles = {
-  width: "100%",
-  height: "2rem",
-  lineHeight: "2rem",
-  verticalAlign: "middle",
-  fontSize: "1rem",
-  marginBottom: "1.5rem",
-  padding: "0 0.25rem"
-};
+  width: '100%',
+  height: '2rem',
+  lineHeight: '2rem',
+  verticalAlign: 'middle',
+  fontSize: '1rem',
+  marginBottom: '1.5rem',
+  padding: '0 0.25rem'
+}
 
 const SignIn = () => {
   const [email, setEmail] = useState()
@@ -78,7 +78,7 @@ const SignIn = () => {
   return (
     <div className='blog'>
       <h1>Sign In</h1>
-      <section style={{ margin: "2rem 0" }}>
+      <section style={{ margin: '2rem 0' }}>
         <label style={labelStyles} htmlFor='email-field'>
           Email
         </label>
@@ -105,7 +105,7 @@ const SignIn = () => {
           }}
         />
 
-        <div style={{ textAlign: "right" }}>
+        <div style={{ textAlign: 'right' }}>
           <button
             className='blog-button'
             onClick={login}

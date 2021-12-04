@@ -34,6 +34,13 @@ const MobileNav = () => {
             Litters
           </Link>
           <Link 
+            to='/gallery' 
+            className='mobile-link' 
+            onClick={showMenu}
+          >
+            Gallery
+          </Link>
+          <Link 
             to='/blog' 
             className='mobile-link' 
             onClick={showMenu}

@@ -30,7 +30,7 @@ const Contact = () => {
       )}
       <div className='contact-info'>
         <h2>Contact Us</h2>
-        <h4>We are located in the Idaho Falls area.</h4>
+        <h4>We are located in the Idaho Falls, Idaho area.</h4>
         <p>
           <strong>Email :</strong> mtn.river.silvers@gmail.com<br />
         </p>

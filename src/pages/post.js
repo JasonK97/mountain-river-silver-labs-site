@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Redirect } from "react-router-dom";
-import { getFirebase } from "../firebase";
+import React, { useState, useEffect } from 'react'
+import { Redirect } from 'react-router-dom'
+import { getFirebase } from '../firebase'
 import { Messaging } from 'react-cssfx-loading/lib'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,7 +12,7 @@ const Post = ({ match }) => {
   const [user, setUser] = useState()
 
   useEffect(() => {
-    const slug = match.params.slug;
+    const slug = match.params.slug
 
     getFirebase()
       .database()
@@ -32,7 +32,7 @@ const Post = ({ match }) => {
 
   const postDoesNotExist = !currentPost
   if (postDoesNotExist) {
-    return <Redirect to="/404" />;
+    return <Redirect to='/404' />
   }
 
   getFirebase()
@@ -46,7 +46,7 @@ const Post = ({ match }) => {
   if (user) {
     return (
       <div className='blog'>
-        <img src={currentPost.coverImage} alt={currentPost.coverImageAlt} className="postImage" />
+        <img src={currentPost.coverImage} alt={currentPost.coverImageAlt} className='postImage' />
           <div className='post-content'>
             <h1>{currentPost.title}</h1>
             <Link
@@ -71,7 +71,7 @@ const Post = ({ match }) => {
   
   return (
     <div className='blog'>
-      <img src={currentPost.coverImage} alt={currentPost.coverImageAlt} className="postImage" />
+      <img src={currentPost.coverImage} alt={currentPost.coverImageAlt} className='postImage' />
       <div 
         style={{ 
           display: 'flex', 
@@ -90,7 +90,7 @@ const Post = ({ match }) => {
         Back to list ...
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Post;
+export default Post
