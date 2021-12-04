@@ -52,7 +52,7 @@ const Home = () => {
                 __html: `${blogPost.content.substring(0, 200)}...`
               }}
             ></p>
-            <Link to={`/blog/${blogPost.slug}`}>Continue reading ...</Link>
+            <Link to={`/blog/${blogPost.slug}`} className='blog-button'>Continue reading ...</Link>
           </div>
         </section>
       ))}
