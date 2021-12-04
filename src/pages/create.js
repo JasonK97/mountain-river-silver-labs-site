@@ -36,9 +36,9 @@ const Create = ({ history }) => {
     }
 
     const day = now.getDate();
-    if (day < 10) {
-      day = `0${day}`;
-    }
+    // if (day < 10) {
+    //   day = `0${day}`;
+    // }
 
     return {
       formatted: `${year}-${month}-${day}`,
