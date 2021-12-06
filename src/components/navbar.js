@@ -16,11 +16,11 @@ function NavBar() {
         <Link to='/' className='nav-link' style={{ margin: '15px' }}>
           Home
         </Link>
+        <Link to='/about-us' className='nav-link' style={{ margin: '15px' }}>
+          About us
+        </Link>
         <Link to='/litters' className='nav-link' style={{ margin: '15px' }}>
           Litters
-        </Link>
-        <Link to='/gallery' className='nav-link' style={{ margin: '15px' }}>
-          Gallery
         </Link>
         <Link to='/blog' className='nav-link' style={{ margin: '15px' }}>
           Blog

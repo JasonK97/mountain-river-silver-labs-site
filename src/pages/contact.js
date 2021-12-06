@@ -19,7 +19,7 @@ const Contact = () => {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const isMobile = windowDimension <= 640
+  const isMobile = windowDimension <= 1200
 
   return (
     <div className='contact-page'>
@@ -30,10 +30,11 @@ const Contact = () => {
       )}
       <div className='contact-info'>
         <h2>Contact Us</h2>
-        <h4>We are located in the Idaho Falls, Idaho area.</h4>
         <p>
           <strong>Email :</strong> mtn.river.silvers@gmail.com<br />
         </p>
+        
+        <h4>We are located in Menan, Idaho</h4>
         <a 
           className='email-link' 
           href='mailto:mtn.river.silvers@gmail.com?Subject=Puppy Inquiry&body=I would love to adopt one of your puppies! Which are atill available?' 

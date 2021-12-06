@@ -100,8 +100,49 @@ nav h2 {
   border-radius: 3px;
 }
 
-.about, .parent-info {
+.about, .parent-info, .health {
   max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.about-grouping {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.services-section {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.icon {
+  width: 200px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.source-link {
+  color: #000000;
+}
+
+.source {
+  font-size: 12px;
+}
+
+.testimonial {
+  max-width: 600px;
   margin: 0 auto;
   padding: 24px;
 }
@@ -149,6 +190,10 @@ nav h2 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 12px;
+}
+
+.litter-2019 {
+  margin-top: 50px;
 }
 
 .gallery {
@@ -279,7 +324,7 @@ nav h2 {
   background-color: #e7d7c1;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
   body {
     background-color: #1f1f1f;
     color: #e7d7c1;
@@ -293,5 +338,19 @@ nav h2 {
   .delete-button {
     background-color: #ffffff;
     color: #e50303;
+  }
+
+  .services-section {
+    display: block;
+    justify-content: center;
+  }
+
+  .services {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .icon-link {
+    color: #e7d7c1;
   }
 }
