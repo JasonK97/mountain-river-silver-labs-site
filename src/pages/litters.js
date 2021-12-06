@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import grizz1 from '../assets/Grizz-1.jpg'
 import grizz2 from '../assets/Grizz-2.jpg'
@@ -23,6 +24,10 @@ import rip3 from '../assets/rip-3.jpg'
 const Litters = () => {
   return (
     <div className='litters-page'>
+      <div className='litter-nav'>
+        <Link to='/litters/where-are-they-now'>Where are they now?</Link>
+        <Link to='/litters/gallery'>Image Gallery</Link>
+      </div>
       <h2 style={{ textAlign: 'center' }}>Where are they now?</h2>
       <div className='litter-2020'>
         <h2>Spring Litter 2020</h2>

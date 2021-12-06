@@ -27,18 +27,18 @@ const MobileNav = () => {
             Home
           </Link>
           <Link 
+            to='/about-us' 
+            className='mobile-link' 
+            onClick={showMenu}
+          >
+            About Us
+          </Link>
+          <Link 
             to='/litters' 
             className='mobile-link' 
             onClick={showMenu}
           >
             Litters
-          </Link>
-          <Link 
-            to='/gallery' 
-            className='mobile-link' 
-            onClick={showMenu}
-          >
-            Gallery
           </Link>
           <Link 
             to='/blog' 

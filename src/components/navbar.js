@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+
+import * as navbarStyles from './navbar.module.scss'
 
 import logo from '../assets/logo2-02.png'
 
@@ -13,21 +15,21 @@ function NavBar() {
         </Link>
       </div>
       <div className='nav-right'>
-        <Link to='/' className='nav-link' style={{ margin: '15px' }}>
+        <NavLink exact to='/' className='nav-link' activeClassName='nav-link-active'>
           Home
-        </Link>
-        <Link to='/about-us' className='nav-link' style={{ margin: '15px' }}>
+        </NavLink>
+        <NavLink exact to='/about-us' className='nav-link' activeClassName='nav-link-active'>
           About us
-        </Link>
-        <Link to='/litters' className='nav-link' style={{ margin: '15px' }}>
+        </NavLink>
+        <NavLink to='/litters' className='nav-link' activeClassName='nav-link-active'>
           Litters
-        </Link>
-        <Link to='/blog' className='nav-link' style={{ margin: '15px' }}>
+        </NavLink>
+        <NavLink to='/blog' className='nav-link' activeClassName='nav-link-active'>
           Blog
-        </Link>
-        <Link to='/contact-us' className='nav-link' style={{ margin: '15px' }}>
+        </NavLink>
+        <NavLink exact to='/contact-us' className='nav-link' activeClassName='nav-link-active'>
           Contact Us
-        </Link>
+        </NavLink>
       </div>
     </nav>
   )

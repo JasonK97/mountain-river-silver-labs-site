@@ -17,6 +17,7 @@ import Litters from './pages/litters'
 import NoMatch from './pages/no-match'
 import Post from './pages/post'
 import SignIn from './pages/sign-in'
+import Where from './pages/where-are-they'
 
 function App() {
   const [windowDimension, setWindowDimension] = useState(null)
@@ -52,11 +53,12 @@ function App() {
           <Route path='/contact-us' component={Contact} />
           <Route path='/create' component={Create} />
           <Route path='/edit/:slug' component={Edit} />
-          <Route path='/gallery' component={Gallery} />
+          <Route path='/litters/gallery' component={Gallery} />
           <Route path='/guaranteed-health' component={Health} />
           <Route path='/litters' component={Litters} />
           <Route path='/404' component={NoMatch} />
           <Route path='/blog/:slug' component={Post} />
+          <Route path='/litters/where-are-they-now' component={Where} />
         </Switch>
       </main>
     </Router>

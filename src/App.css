@@ -31,10 +31,15 @@ nav h2 {
 
 .nav-link {
   color: #e7d7c1;
+  margin: 15px;
 }
 
 .nav-link:hover {
   color: #8C1C13;
+}
+
+.nav-link-active {
+  color: #735751;
 }
 
 .mobile-navbar {
