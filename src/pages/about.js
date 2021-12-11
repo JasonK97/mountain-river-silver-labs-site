@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import Kimber from '../assets/silverfatherandkimber/IMG-3881.JPG'
 
@@ -51,6 +52,9 @@ const About = () => {
                     </a>
           </em>
         </p>
+        <NavLink to='/guaranteed-health' className='to-health'>
+          More about our Health Guarantee
+        </NavLink>
       </div>
     </div>
   )

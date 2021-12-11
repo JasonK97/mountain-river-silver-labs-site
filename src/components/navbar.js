@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import * as navbarStyles from './navbar.module.scss'
-
 import logo from '../assets/logo2-02.png'
 
 function NavBar() {
@@ -21,7 +19,7 @@ function NavBar() {
         <NavLink exact to='/about-us' className='nav-link' activeClassName='nav-link-active'>
           About us
         </NavLink>
-        <NavLink to='/litters' className='nav-link' activeClassName='nav-link-active'>
+        <NavLink to='/litters/gallery' className='nav-link' activeClassName='nav-link-active'>
           Litters
         </NavLink>
         <NavLink to='/blog' className='nav-link' activeClassName='nav-link-active'>

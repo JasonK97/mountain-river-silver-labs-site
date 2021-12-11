@@ -90,14 +90,14 @@ const Home = () => {
       </div>
       <div className='testimonial'>
         <h3>Testimonial</h3>
-        <em>
-          "The Hammons were a dream to work with while we were adopting our puppy! They put so much time 
+        <p>
+          <em>"The Hammons were a dream to work with while we were adopting our puppy! They put so much time 
           and effort into taking care of the puppies and it really shows. Our dog is now 18 months old 
           and he is incredible, everywhere we go people stop and comment about how gorgeous he is. We 
           are so grateful we found Mountain River Silver Labs, we will definitely be purchasing another 
-          puppy from them in the future."<br />
-          <strong>- Sabrina N. | Rexburg, ID</strong>
-        </em>
+          puppy from them in the future."<br /></em>
+          <strong>- Sabrina N. <em>Rexburg, ID</em></strong>
+        </p>
       </div>
       {isMobile ? (
         <div className='parent-info'>

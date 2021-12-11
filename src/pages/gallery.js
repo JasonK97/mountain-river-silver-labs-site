@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+// import { NavLink } from 'react-router-dom'
+
+// import Gallery2019 from './gallery/2019'
+// import Gallery2020 from './gallery/2020'
 
 import litter101 from '../assets/puppiesfrom2019litter/IMG-4107.JPG'
 import litter102 from '../assets/puppiesfrom2019litter/IMG-4108.JPG'
@@ -26,27 +30,59 @@ import litter210 from '../assets/2020litter/IMG_6718.JPG'
 import litter211 from '../assets/2020litter/IMG_6810.JPG'
 import litter212 from '../assets/2020litter/IMG_6841.JPG'
 
-
 const Gallery = () => {
+  // const [is2020, setIs2020] = useState(false)
+
+  // function set2020() {
+  //   setIs2020(true)
+  // }
+
+  // function set2019() {
+  //   setIs2020(false)
+  // }
+
   return (
     <div className='litters-page'>
+      {/* <div className='gallery-btns'>
+        <NavLink
+          to='/litters/gallery/2019'
+          className='gallery-button'
+          activeClassName='gallery-button-active'
+          onClick={set2019}
+        >
+          2019
+        </NavLink>
+        <NavLink 
+          to='/litters/gallery/2020'
+          className='gallery-button'
+          activeClassName='gallery-button-active'
+          onClick={set2020}
+        >
+          2020
+        </NavLink>
+      </div>
+      {is2020 ? (
+        <Gallery2020 />
+      ) : (
+        <Gallery2019 />
+      )} */}
       <div className='litter-2020'>
-          <h2>Spring Litter 2020</h2>
-          <div className="gallery">
-            <img src={litter201} alt='charcoal puppy' className='litter-image' />
-            <img src={litter202} alt='second charcoal puppy' className='litter-image' />
-            <img src={litter203} alt='silver and charcoal puppies' className='litter-image' />
-            <img src={litter204} alt='two black puppies' className='litter-image' />
-            <img src={litter205} alt='three charcoal puppies' className='litter-image' />
-            <img src={litter206} alt='four chocolate puppies' className='litter-image' />
-            <img src={litter207} alt='silver puppt' className='litter-image' />
-            <img src={litter208} alt='charcoal puppy on brown fur' className='litter-image' />
-            <img src={litter209} alt='black puppy on brown fur' className='litter-image' />
-            <img src={litter210} alt='chocolate puppy on the lawn' className='litter-image' />
-            <img src={litter211} alt='another chocolate puppy on the lawn' className='litter-image' />
-            <img src={litter212} alt='charcoal puppy on the lawn' className='litter-image' />
-          </div>
+        <h2>Spring Litter 2020</h2>
+        <div className="gallery">
+          <img src={litter201} alt='charcoal puppy' className='litter-image' />
+          <img src={litter202} alt='second charcoal puppy' className='litter-image' />
+          <img src={litter203} alt='silver and charcoal puppies' className='litter-image' />
+          <img src={litter204} alt='two black puppies' className='litter-image' />
+          <img src={litter205} alt='three charcoal puppies' className='litter-image' />
+          <img src={litter206} alt='four chocolate puppies' className='litter-image' />
+          <img src={litter207} alt='silver puppy' className='litter-image' />
+          <img src={litter208} alt='charcoal puppy on brown fur' className='litter-image' />
+          <img src={litter209} alt='black puppy on brown fur' className='litter-image' />
+          <img src={litter210} alt='chocolate puppy on the lawn' className='litter-image' />
+          <img src={litter211} alt='another chocolate puppy on the lawn' className='litter-image' />
+          <img src={litter212} alt='charcoal puppy on the lawn' className='litter-image' />
         </div>
+      </div>
       <div className='litter-2019'>
         <h2>Spring Litter 2019</h2>
         <div className="gallery">

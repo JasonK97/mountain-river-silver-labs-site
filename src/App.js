@@ -53,12 +53,12 @@ function App() {
           <Route path='/contact-us' component={Contact} />
           <Route path='/create' component={Create} />
           <Route path='/edit/:slug' component={Edit} />
-          <Route path='/litters/gallery' component={Gallery} />
+          {/* <Route path='/litters/gallery' component={Gallery} /> */}
           <Route path='/guaranteed-health' component={Health} />
           <Route path='/litters' component={Litters} />
           <Route path='/404' component={NoMatch} />
           <Route path='/blog/:slug' component={Post} />
-          <Route path='/litters/where-are-they-now' component={Where} />
+          {/* <Route path='/litters/where-are-they-now' component={Where} /> */}
         </Switch>
       </main>
     </Router>
